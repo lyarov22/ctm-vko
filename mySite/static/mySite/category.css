@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* Общий стиль для всего контента страницы */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Заголовок */
+h1 {
+  text-align: left;
+  padding: 20px 0;
+}
+
+/* Стили для постов */
+.post-container {
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: calc(100% - 600px); /* 40px отступы слева и справа */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-date {
+  font-size: 16px;
+}
+
+/* Адаптивность для разных размеров экранов */
+@media (max-width: 800px) {
+  /* Для экранов с шириной до 800px */
+  .post-container {
+    max-width: calc(100% - 20px); /* Уменьшаем отступы для меньших экранов */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Для экранов с шириной до 600px */
+  .post-title {
+    font-size: 20px; /* Уменьшаем размер заголовка для меньших экранов */
+  }
+}

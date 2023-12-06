@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.header {
+  height: 215px;
+  margin-bottom: 20px;
+}
+
+.header-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 10px 40px 10px;
+  margin: 0 auto;
+}
+
+.header-logos {
+  margin-left: 5vw;
+}
+
+.header__logo {
+  width: 90px;
+}
+
+.header__title {
+  color: #d88f06;
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 600;
+  font-size: 21px;
+  padding-left: 15px;
+  word-wrap: break-word;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  padding-right: 5vw;
+}
+
+.header-icons__icon {
+  width: 30px;
+}
+
+.header-langs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__lang {
+  padding: 15px 25px 15px 25px;
+  background-color: #0a4eb5;
+  color: white;
+  border-radius: 30px;
+}
+
+    /* Стили для активной ссылки */
+    .header__lang.active {
+      padding: 15px 25px 15px 25px;
+      background-color: red;
+      color: white;
+      border-radius: 30px;
+    }
+
+
+
+nav {
+  background-color: #0a4eb5;
+  max-width: 1920px; /* Максимальная ширина навбара */
+  margin: 0 auto; /* Центрирование навбара */
+}
+
+.menu,
+.menu ul,
+.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  height: 55px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.menu li {
+  position: relative;
+  padding-right: 100px;
+  list-style: none;
+  box-sizing: border-box;
+  z-index: 100;
+
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+
+  color: wheat;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  position: relative;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgb(231, 221, 221);
+  align-items: center;
+
+}
+
+.submenu li:hover .nested-submenu {
+  display: block;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submenu a {
+  color: black;
+  padding: 10px;
+  
+}
+
+.submenu a:hover {
+  background-color: white;
+}
+
+.nested-submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: white;
+  min-width: 200px;
+}
+
+.submenu li:hover .nested-submenu {
+  display: block;
+}
+
+.bviButton
+{
+  background: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Медиа запрос для мобильных устройств */
+@media all and (min-width: 300px) and (max-width: 550px){
+
+  html {
+    overflow-x: hidden;
+    }
+    
+    body {
+    width: 100vmin;
+    overflow-x: hidden;
+    
+    }
+    
+    .container {
+    width: 100vmin;
+    overflow-x: hidden;
+    }
+
+
+  .header__logo{
+    width: 50px;
+  }
+
+  .header__title {
+    color: #0a4eb5;
+    font-family: "Montserrat", sans-serif;
+  
+    font-weight: 600;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .header-icons
+  {
+    padding-left: 15px;
+  }
+  
+  .header-langs
+  {
+    padding-top: 8px;
+  }
+
+  .header__lang
+  {
+    padding: 5px 15px 5px 15px;
+
+  }
+  .header__lang.active {
+    padding: 5px 15px 5px 15px;
+  }
+
+
+  .menu {
+    height: 150px;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-self: center;
+  
+  }
+
+  .menu li{
+
+    height: 35px;
+    font-size: 14px;
+
+  }
+
+  .header{
+    padding-bottom: 500px;
+  }
+
+  .submenu
+  {
+    position: relative;
+    border-bottom: 1px solid rgb(231, 221, 221);
+    align-items: center;
+
+
+  }
+
+  .submenu li{
+    height: 50px;
+    font-size: 12px;
+    align-items: center;
+    
+  }
+
+  .submenu a{
+    margin-top: -15px;
+  }
+
+  .nested-submenu {
+    top: 1000%; /* Adjust the positioning of submenus */
+    left: 0;
+    min-width: 100%; /* Make submenus full-width */
+    background-color: #fff;
+
+  }
+
+  .menu li:hover .menu {
+    display: none;
+  }
+
+  .nav3
+  {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .post-container
+  {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+}

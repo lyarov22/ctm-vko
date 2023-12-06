@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto; /* Add margin to provide spacing from top and bottom */
+
+}
+
+.post-container
+{
+    padding-left: 15.625vw;
+    padding-right: 15.625vw;
+}
+
+/* Заголовки */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Increase the margin for better spacing between headings */
+}
+
+/* Стили для раздела "Поделиться" */
+.share-buttons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.share-buttons a {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Стили для аватарки поста */
+.image-title {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Стили для слайдера изображений */
+.image-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для ссылок */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav-container {
+    display: inline-block;
+
+}
+
+.nav3 {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    font-size: smaller;
+    padding-right: 15.625vw;
+    padding-left: 15.625vw;
+}
+
+.nav3__category {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav3__title {
+    margin: 0;
+}
+
+.content_p
+{
+    white-space: pre-line;
+}
+
+/* Медиа запрос для мобильных устройств */
+@media all and (min-width: 300px) and (max-width: 550px){
+    html {
+        overflow-x: hidden;
+        }
+        
+        body {
+        width: 100vmin;
+        overflow-x: hidden;
+        
+        }
+        
+        .container {
+        width: 100vmin;
+        overflow-x: hidden;
+        }
+        .post-container
+        {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+}

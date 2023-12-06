@@ -1,0 +1,59 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'mySite/header2.css' %}">
+    <title>{% trans 'СОЦИАЛЬНЫЕ РАБОЧИЕ МЕСТА' %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+    
+
+    <div class="head">
+        <div class="container">
+            <div class="head-h">
+            <h1>{% trans 'СОЦИАЛЬНЫЕ РАБОЧИЕ МЕСТА' %}</h1>
+              
+ {% load i18n %}
+            <p>{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="conteiner">
+        <div class="mian-section">
+            <div class="container">
+                {% if language_code == 'ru' %}
+                <p class="white-space-wrap__p">
+                
+                </p>
+                <a href="https://www.enbek.kz/ru/page/creation-of-subsided-jobs"  class="show-this"><span>Подать заявку </span></a>
+                {% else %}
+                <p class="white-space-wrap__p">
+                    Социальные рабочие места организуются на предприятиях и организациях всех форм собственности, а также на дому, при этом к участию допускаются работодатели, которые регулярно производят налоговые и другие социальные отчисления, у которых отсутствует просроченная задолженность по заработной плате, и действующие более одного года.
+
+                    Количество создаваемых временных рабочих мест для организации социальных рабочих мест на очередной финансовый год составляет не более 20% от списочной численностью работников, за исключением рабочих мест, создаваемых для инвалидов, лиц, освобожденных из мест лишения свободы, лиц, состоящих на службе пробации.
+
+                      Работодатель посредством «личного кабинета» на Электронной бирже труда подает электронную заявку на создание социальных рабочих мест в центр занятости на очередной финансовый год в срок до 1 ноября текущего финансового года.
+
+                      Ежемесячный размер субсидий на заработную плату лицам, трудоустроенным на социальные рабочие места, с учетом налогов, обязательных социальных отчислений и компенсации за неиспользованный трудовой отпуск без учета выплат по экологическим надбавкам составляет 35% от установленного размера заработной платы, но не более 20 (двадцати) МРП.
+                </p>
+                <a href="https://www.enbek.kz/kz/page/creation-of-subsided-jobs"  class="show-this"><span>Өтініш беру</span></a>
+                {% endif %}
+
+                 <div class="video-player">
+                    <iframe width="1272" height="720" src="https://www.youtube.com/embed/rWvyakXQiKk" title="Работодателям_Организация субсидируемых рабочих мест" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+    
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if language_code == 'kk' %}{{ category.name2 }}{% else %}{{ category.name }}{% endif %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+    <link rel="stylesheet" href="{% static 'mySite/category.css' %}">
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+    {% include 'mySite/header2.html' %}
+    <div class="container">
+        {% for post in posts %}
+            <div class="post-container">
+                <h2 class="post-title">
+                    <a href="{% url 'mySite:post' post.slug %}">
+                        {% if language_code == 'kk' %}{{ post.title2 }}{% else %}{{ post.title }}{% endif %}
+                    </a>
+                </h2>
+                <p class="post-date">{{ post.pub_date|date:date_format }}</p>
+            </div>
+
+        {% endfor %}
+    </div>
+    
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>

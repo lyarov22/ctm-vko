@@ -1,0 +1,227 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/header.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/logoV2.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'dist/css/bvi.css' %}" type="text/css">
+
+    <title>{% block title %}{% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}{% endblock %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+
+<link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}"></head>
+<link rel="stylesheet" href="{% static 'js/dist/css/bvi.min.css' %}">
+
+</head>
+<body>
+  <form id="myForm" action="{% url 'mySite:new_page' 'placeholder' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="data" id="dataInput" value="">
+    <input type="hidden" name="page_id" id="pageIdInput" value="">
+  </form>
+
+    <div class="header">
+        <div class="container">
+          <div class="header-header">
+            <div class="header-logos">
+              <a href="{% url 'mySite:index' %}">
+                <!-- <img class="header__logo" src="{% static 'img/logo-akimat.png' %}" alt="" /> -->
+                <img class="header__logo" src="{% static 'img/svg/vko.svg' %}" alt=""  />
+                <img class="header__logo" src="{% static 'img/logoV2.png' %}" alt="" />
+
+              </a>    
+            </div>
+  
+            <p class="header__title">
+              Шығыс Қазақстан облысының «Еңбек мобильділігі орталығы»
+              КММ
+              <br />
+              КГУ «Центр трудовой мобильности» Восточно-Казахстанской области
+            </p>
+  
+            <div class="header-right">
+                <div class="header-icons">
+                    <a class="header-icons__link" href="">
+                        <img class="header-icons__icon" src="{% static 'img/svg/facebook.svg' %}" alt="Facebook" />
+                    </a>
+                    <a class="header-icons__link" href="">
+                        <img class="header-icons__icon" src="{% static 'img/svg/instagram.svg' %}" alt="Instagram" />
+                    </a>
+                    <a class="header-icons__link" href="">
+                        <img class="header-icons__icon" src="{% static 'img/svg/telegram.svg' %}" alt="Telegram" />
+                    </a>
+                    <a class="header-icons__link" href="">
+                        <img class="header-icons__icon" src="{% static 'img/svg/youtube.svg' %}" alt="YouTube" />
+                    </a>
+                    <a href="#" class="bvi-open header-icons__link" title="Версия сайта для слабовидящих">
+                      <img class="header-icons__icon" src="{% static 'img/svg/eye.svg' %}" alt="Режим для слабовидящих" />
+                    </a>
+                </div>
+              <div class="header-langs">
+
+                  <!-- Для казахского языка -->
+                  <a href="{% url 'set_language' %}" class="header__lang {% if LANGUAGE_CODE == 'kk' %}active{% endif %}" onclick="event.preventDefault(); document.getElementById('language-form').language.value = 'kk'; document.getElementById('language-form').submit();">Қаз</a>
+
+                  <!-- Для русского языка -->
+                  <a href="{% url 'set_language' %}" class="header__lang {% if LANGUAGE_CODE == 'ru' %}active{% endif %}" onclick="event.preventDefault(); document.getElementById('language-form').language.value = 'ru'; document.getElementById('language-form').submit();">Рус</a>
+
+                  <form id="language-form" action="{% url 'set_language' %}" method="post">
+                      {% csrf_token %}
+                      <select name="language" style="display: none;">
+                          {% get_available_languages as LANGUAGES %}
+                          {% get_language_info_list for LANGUAGES as languages %}
+                          {% for language in languages %}
+                              <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                  {{ language.name_local }} ({{ language.code }})
+                              </option>
+                          {% endfor %}
+                      </select>
+                  </form>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <nav>
+          <ul class="menu">
+              <li><a href="#">{% trans 'ГРАЖДАНАМ' %}</a>
+                  <ul class="submenu">
+                      <li><a href="https://www.enbek.kz/ru/how-to-get-state-employment-support">{% trans 'Онлайн услуги' %}</a></li>
+                      <li><a href="https://www.enbek.kz/ru/resettlement">{% trans 'Переселение' %}</a></li>
+                      <li><a href="https://www.enbek.kz/ru/atlases-professions">{% trans 'Атласы профессий' %}</a></li>
+                      <li><a href="https://www.enbek.kz/ru/barret">{% trans 'Профориентация' %}</a></li>
+      
+                      <li><a href="#">{% trans 'Ищите работу?' %}</a>
+                          <ul class="nested-submenu">
+                              <li><a href="https://enbek.kz/ru/search/vac?region_id=63&kvotInv=kvotInv">{% trans 'Для лиц с инвалидностью' %}</a></li>
+                              <li><a href="https://enbek.kz/ru/search/vac?region_id=63&fl_mbt=fl_mbt&kvotSirot=kvotSirot">{% trans 'Для молодежи' %}</a></li>
+                              <li><a href="https://enbek.kz/ru/search/vac?region_id=63&fl_relocate=fl_relocate">{% trans 'С предоставлением жилья' %}</a></li>
+      
+                              <li><a href="{% url 'mySite:new_page' 'obshhestvennye-raboty' %}">{% trans 'Общественные работы' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'molodezhnaja-praktika' %}">{% trans 'Молодежная практика' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'pervoe-rabochee-mesto' %}">{% trans 'Первое рабочее место' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'socialnye-rabochie-mesta' %}">{% trans 'Социальные рабочие места' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'kontrakt-pokolenii' %}">{% trans 'Контракт поколений' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'serebrjanyj-vozrast' %}">{% trans 'Серебрянный возраст' %}</a></li>
+                              <li><a href="https://enbek.kz/ru/search/vac?region_id=63">{% trans 'ВСЕ ДОСТУПНЫЕ ВАКАНСИИ' %}</a></li>
+      
+                          </ul>
+                      </li>
+      
+                      <li><a href="#">{% trans 'Есть бизнес идея?' %}</a>
+                          <ul class="nested-submenu">
+                              <li><a href="{% url 'mySite:new_page' 'obuchenie-bastau-biznes' %}">{% trans 'Обучение Бастау Бизнес' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'memlekettik-granttar' %}">{% trans 'Государственные гранты' %}</a></li>
+                          </ul>
+                      </li>
+      
+                      <li><a href="#">{% trans 'Получить востребованную квалификацию на рынке труда' %}</a>
+                          <ul class="nested-submenu">
+                              <li><a href="{% url 'mySite:new_page' 'professionalnoe-obuchenie-v-uchebnyh-organizaciyah' %}">{% trans 'Профессиональное обучение в учебных организациях' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'professionalnoe-obuchenie-na-rabochem-meste' %}">{% trans 'Профессиональное обучение на рабочем месте' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'besplatnye-onlajn-kursy-dlya-bezrabotnyh-grazhdan' %}">{% trans 'Бесплатные онлайн курсы для безработных граждан' %}</a></li>
+                          </ul>
+                      </li>
+      
+                      <li><a href="#">{% trans 'Поддержка социально-уязвимых граждан' %}</a>
+                          <ul class="nested-submenu">
+                              <li><a href="{% url 'mySite:new_page' 'adresnaja-socialnaja-pomoshh' %}">{% trans 'Адресная социальная помощь' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'specialnye-rabochie-mesta' %}">{% trans 'Социальные рабочие места' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'rabochie-mesta-po-kvotam' %}">{% trans 'Рабочие места по квотам' %}</a></li>
+                          </ul>
+                      </li>
+      
+                  </ul>
+              </li>
+              <li><a href="#">{% trans 'РАБОТОДАТЕЛЯМ' %}</a>
+                  <ul class="submenu">
+                      <li><a href="#">{% trans 'Ищите сотрудников?' %}</a>
+                          <ul class="nested-submenu">
+                              <li><a href="{% url 'mySite:new_page' 'instrukcija-po-registracii-rabotodatelej-na-portale-enbek-kz' %}">{% trans 'Инструкция по регистрации работодателей на портале enbek.kz' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'popolnenie-bazy-vakansii-i-poisk-soiskatelej' %}">{% trans 'Пополнение базы вакансий и поиск соискателей' %}</a></li>
+                          </ul>
+                      </li>
+      
+                      <li><a href="#">{% trans 'Субсидирование государством рабочих мест' %}</a>
+                          <ul class="nested-submenu">
+                              <li><a href="{% url 'mySite:new_page' 'for-employers-obshhestvennye-raboty' %}">{% trans 'Общественные работы' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'for-employers-molodezhnaja-praktika' %}">{% trans 'Молодежная практика' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'for-employers-pervoe-rabochee-mesto' %}">{% trans 'Первое рабочее место' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'for-employers-socialnye-rabochie-mesta' %}">{% trans 'Социальные рабочие места' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'for-employers-kontrakt-pokolenii' %}">{% trans 'Контракт поколений' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'for-employers-serebrjanyj-vozrast' %}">{% trans 'Серебрянный возраст' %}</a></li>
+                          </ul>
+                      </li>
+      
+                      <li><a href="#">{% trans 'Нуждаетесь в квалификацированных кадрах?' %}</a>
+                          <ul class="nested-submenu">
+                              <li><a href="{% url 'mySite:new_page' 'professionalnoe-obuchenie-v-uchebnyh-organizaciyah' %}">{% trans 'Профессиональное обучение в учебных организациях' %}</a></li>
+                              <li><a href="{% url 'mySite:new_page' 'professionalnoe-obuchenie-na-rabochem-meste' %}">{% trans 'Профессиональное обучение на рабочем месте' %}</a></li>
+                          </ul>
+                      </li>
+      
+                      <li><a href="#">{% trans 'Хотите трудоустроить лиц с инвалидностью?' %}</a>
+                          <ul class="nested-submenu">
+                              <li><a href="{% url 'mySite:new_page' 'subsidirovanie-sozdanija-specialnyh-rabochih-mest-dlja-lic-s-invalidnostju' %}">{% trans 'Субсидирование создания специальных рабочих мест' %}</a></li>
+                          </ul>
+                      </li>
+                     
+                      <li><a href="{% url 'mySite:new_page' 'registraciya-trudovyh-dogovorov-na-portale-ebt' %}">{% trans 'Регистрация трудовых договоров на портале ЭБТ' %}</a></li>
+                      <li><a href="{% url 'mySite:new_page' 'vysvobozhdenie-sotrudnikov' %}">{% trans 'Высвобождение сотрудников' %}</a></li>
+                      <li><a href="{% url 'mySite:new_page' 'rus-otchet-po-kvotirovaniju-rabochih-mest' %}">{% trans 'Отчет по квотированию рабочих мест' %}</a></li>
+                      <li><a href="{% url 'mySite:category' 'novosti-dlya-rabotodatelej' %}">{% trans 'Новости для работодателей' %}</a></li>
+                  </ul>
+              </li>
+      
+              <li><a href="#">{% trans 'НОВОСТИ' %}</a>
+                  <ul class="submenu">
+                      <li><a href="{% url 'mySite:category' 'novosti' %}">{% trans 'Новости' %}</a></li>
+                      <li><a href="{% url 'mySite:category' 'obyavleniya' %}">{% trans 'Объявления' %}</a></li>
+                      <li><a href="{% url 'mySite:category' 'smi-o-nas' %}">{% trans 'СМИ о нас' %}</a></li>
+                      <li><a href="{% url 'mySite:category' 'infografika' %}">{% trans 'Инфографика' %}</a></li>
+                    <li><a href="{% url 'mySite:category' 'ankety' %}">{% trans 'Анкеты' %}</a></li>
+                  </ul>
+              </li>
+      
+              <li><a href="#">{% trans 'О ЦЕНТРЕ' %}</a>
+                  <ul class="submenu">
+                      <li><a href="{% url 'mySite:new_page' 'o-centre' %}">{% trans 'О Центре' %}</a></li>
+                      <li><a href="{% url 'mySite:new_page' 'administration' %}">{% trans 'Руководство' %}</a></li>
+                      <li><a href="{% url 'mySite:new_page' 'structure' %}">{% trans 'Структура' %}</a></li>
+                      <li><a href="{% url 'mySite:new_page' 'career-centers' %}">{% trans 'Карьерные Центры' %}</a></li>
+                      <li><a href="{% url 'mySite:category' 'otdely' %}">{% trans 'Отделы' %}</a></li>
+                      <li><a href="{% url 'mySite:category' 'gosudarstvennye-zakupki' %}">{% trans 'Государственные закупки' %}</a></li>
+                      <li><a href="{% url 'mySite:new_page' 'npa' %}">{% trans 'Нормативно-правовые акты' %}</a></li>
+                      <li><a href="{% url 'mySite:new_page' 'contacts' %}">{% trans 'Контакты' %}</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+      
+        
+
+      </div>
+      {% csrf_token %}
+      <script>
+        function submitForm(data, pageId) {
+            var form = document.getElementById('myForm');
+            var dataInput = document.getElementById('dataInput');
+            var pageIdInput = document.getElementById('pageIdInput');
+            dataInput.value = data;
+            pageIdInput.value = pageId;
+            form.action = form.action.replace('placeholder', pageId);
+            form.submit();
+        }
+    </script>
+    <script src="{% static 'js/dist/js/bvi.js' %}"></script>
+    <script src="{% static 'js/visually_impaired.js' %}"></script>
+</body>
+</html>

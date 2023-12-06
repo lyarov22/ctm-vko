@@ -1,0 +1,43 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/header2.css' %}">
+</head>
+<body>
+    <div class="head">
+        <div class="container">
+            <div class="head-h">
+                {% if data %}
+                    <h1>{{ data }}</h1>
+                {% elif category.name %}
+                    <h1>{% if language_code == 'kk' %}{{ category.name2 }}{% else %}{{ category.name }}{% endif %}</h1>
+                {% else %}
+                    <h1>По умолчанию 2</h1>
+                {% endif %}
+            
+            {% load i18n %}
+            <p>{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}</p>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sub-head">
+            <a href="{% url 'mySite:index' %}">{% trans 'Главная' %}&nbsp;→&nbsp;  </a>
+            {% if category.name %}
+                <p>{% if language_code == 'kk' %}{{ category.name2 }}{% else %}{{ category.name }}{% endif %}</p>
+            {% else %}
+                <p>{{ data }}</p>
+            {% endif %}
+          
+        </div>
+    </div>
+    <div class="grey-line"></div>
+    
+</body>
+</html>

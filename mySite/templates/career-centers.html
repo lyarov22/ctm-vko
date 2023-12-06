@@ -1,0 +1,38 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'mySite/header2.css' %}">
+    <title>{% trans 'Карьерные центры' %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+    <div class="head">
+        <div class="container">
+            <div class="head-h">
+            <h1>{% trans 'Карьерные центры ' %}</h1>
+              
+  {% load i18n %}
+            <p>{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}</p>
+        </div>
+        </div>
+    <div class="conteiner">
+        <div class="mian-section">
+            <p class="white-space-wrap__p"><b>ПОДРОБНАЯ ИНФОРМАЦИЯ О КАРЬЕРНЫХ ЦЕНТРАХ:</b>
+
+                 <a class="a_link" href="https://www.enbek.kz/ru/zaniatost/czn-contacts">Список Карьерных Центров на сайте Enbek.kz</a>
+
+            </p>
+        </div>
+    </div>
+    
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>

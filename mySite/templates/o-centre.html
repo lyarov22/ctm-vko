@@ -1,0 +1,147 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/header2.css' %}">
+    <link rel="stylesheet" href="{% static 'mySite/universal.css' %}">
+    <title>{% trans 'О Центре' %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+
+    <div class="head">
+        <div class="container">
+            <div class="head-h">
+            <h1>{% trans 'О Центре' %}</h1>
+ {% load i18n %}
+            <p class="main-text">{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}</p>
+        </div>
+        </div>
+    </div>
+    <div class="conteiner">
+        <div class="mian-section">
+            {% if language_code == 'kk' %}
+                <p class="main-text"><strong>ЕҢБЕК МОБИЛЬДІЛІГІ ОРТАЛЫҒЫ ТУРАЛЫ</strong></p>
+                <p class="main-text">Мемлекеттік халықты жұмыспен қамту орталығы «Халықты жұмыспен қамту туралы» Қазақстан Республикасының Заңы негізінде жұмыс істейді.</p>
+                <p class="main-text">Халықты жұмыспен қамту орталықтары аудандарда, облыстық маңызы бар қалаларда, Алматы және Астана қалаларында жергілікті атқарушы органдармен 2011 жылы құрылды.</p>
+                <p class="main-text">Қазақстанда 200 халықты жұмыспен қамту орталығы бар.</p>
+                <p class="main-text">Халықты жұмыспен қамту орталықтарының негізгі мақсаты – азаматтар мен жұмыс берушілерге еңбек делдалдығын көрсету, жұмыспен қамтуға жәрдемдесудің белсенді шараларын жүзеге асыру, жұмыссыздықтан әлеуметтік қорғауды ұйымдастыру.</p>
+                <p class="main-text">Халықты жұмыспен қамту орталықтары халыққа және жұмыс берушілерге қызмет көрсетеді. Барлық қызметтер тегін ұсынылады.</p>
+                <p class="main-text">Жұмыспен қамту орталықтарында арнайы дайындалған қызметкерлер жұмыс істейді және бірыңғай жұмыс стандарттары қолданылады.</p>
+                <p class="main-text">&nbsp;</p>
+                <p class="main-text"><b class="main-b">ЖҰМЫС БЕРУШІЛЕРГЕ ҚЫЗМЕТ КӨРСЕТУДІҢ&nbsp;</b><b>ЖАҢА НЫСАНЫ</b></p>
+                <p class="main-text">Барлық қызықтыратын сұрақтар бойынша персоналды менеджердің жеке консультациялары</p>
+                <p class="main-text">Жұмыс берушілерден бос жұмыс орындарын тіркеудің көп арналы тәртібі – жұмыспен қамту орталығында және Электрондық еңбек биржасында (Enbek.kz)</p>
+                <p class="main-text">Ең ірі түйіндеме дерекқорына қол жеткізу мүмкіндігі</p>
+                <p class="main-text">Жұмыс берушілерге талап етілетін дағдылар бойынша қызметкерлерді кәсіби іріктеу</p>
+                <p class="main-text">Жұмыс іздеушілердің жұмыс берушілермен, оның ішінде жұмыспен қамту орталығында сұхбаттасу ұйымдастыру</p>
+                <p class="main-text">Жұмыс берушілердің тапсырыстары бойынша әлеуетті жұмыскерлерге қысқа мерзімді оқыту курстарын ұйымдастыру</p>
+                <p class="main-text">Уақытша жұмыс орындарын құру үшін мемлекеттік субсидиялар</p>
+                <p class="main-text">&nbsp;</p>
+                <p class="main-text"><b class="main-b">АЗАМАТТАРДЫ ЖҰМЫСҚА ОРНАЛАСТЫРУ МӘСЕЛЕСІНДЕГІ ЖАҢА ТӘСІЛДЕМЕЛЕР</b></p>
+                <p class="main-text">Әр клиентке атаулы қарым-қатынас. Жұмысқа орналастырудың жеке жоспарын дайындау</p>
+                <p class="main-text">Ең ірі бос жұмыс орындар дерекқорына қол жеткізу мүмкіндігі</p>
+                <p class="main-text">Бос жұмыс орын нұсқаларын таңдау. Азаматтарға лайықты жұмыс іздеуге жәрдемдесу</p>
+                <p class="main-text">Электронды еңбек биржасы арқылы «Online» режимде халықты жұмыспен қамту орталықтарымен түйіндемелерді алмастыру</p>
+                <p class="main-text">Өз бетімен жұмыс іздеу үшін техникалық ресурстармен қамтамасыз ету – жұмыспен қамту орталығында өзіне-өзі қызмет көрсетузоналарында Электронды еңбек биржасына кіру мүмкіндігі</p>
+                <p class="main-text">Жұмысқа орналастыру немесе оқыту бойынша кәсіптік бағдарлау</p>
+                <p class="main-text">Кәсіптік оқытуды ұйымдастыру</p>
+                <p class="main-text">Жұмысынан айырылған жағдайда төленетін әлеуметтік төлемдер және атаулы әлеуметтік көмек тағайындау үшін құжаттарды қабылдау</p>
+                <p class="main-text">&nbsp;</p>
+                <p class="main-text"><b class="main-b">ЖҰМЫСПЕН ҚАМТУ ОРТАЛЫҚТАРЫНЫҢ АРНАЙЫ ШАРАЛАРЫ</b></p>
+                <p class="main-text">Бос жұмыс орындары жәрмеңкесі</p>
+                <p class="main-text">Жұмыс берушілер мен азаматтарды еңбек нарығындағы жағдай туралы хабардар ету</p>
+                <p class="main-text">Оқушылардың түрлі кәсіптер өкілдерімен кездесулерін ұйымдастыру</p>
+                <p class="main-text">Жұмыспен қамту орталығымен көрсетілетін қызметтерді көрсете отырып, жұмыс берушілердің мақсатты топтарына арналған роуд-шоу ұйымдастыру</p>
+                <p class="main-text">Жұмыссыз азаматтарды психологиялық қолдау</p>
+                <p class="main-text">&nbsp;</p>
+                <p class="main-text"><b class="main-b">АЗАМАТТАРҒА АРНАЛҒАН ҚЫЗМЕТТЕР</b></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3531">Жұмыс іздеп жүрген адам ретінде тіркеу</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3532">Жұмыссыз ретінде тіркеу</a></p>
+                <p class="main-text"><a class="links" href="https://czn.kz/memlekettik-granttar/">Мемлекеттік гранттар</a></p>
+                <p class="main-text"><a class="links" href="https://czn.kz/specialnye-rabochie-mesta-dlja-lic-s-ogranichennymi-vozmozhnostjami/">Мүмкіндігі шектеулі адамдар үшін арнайы жұмыс орындары</a></p>
+                <p class="main-text"><a class="links" href="https://czn.kz/rpa-tar-kelisimsharty-zhobasy/">«Ұрпақтар келісімшарты»&nbsp;жобасы</a></p>
+                <p class="main-text"><a class="links" href="https://czn.kz/al-ash-y-zh-mys-orny-zhobasy/">«Алғашқы жұмыс орны» жобасы</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3533">Лайықты бос жұмыс орындарын іздестіру және жұмысқа орналасуға жәрдемдесу</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3534">Кәсіптік оқыту</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3536">Әлеуметтік кәсіптік бағдарлау</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3537">Әлеуметтік жұмыс орындары</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3538">Қоғамдық жұмыстар</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3539">Жастар практикасы</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3540">Микрокредит бойынша кеңес беру</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3541">Ерікті түрде қоныс аударуға жәрдемдесу</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3542">Атаулы әлеуметтік көмек</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3543">Жұмысынан айырылған жағдайда төленетін әлеуметтік төлемдер</a></p>
+                <p class="main-text">&nbsp;</p>
+                <p class="main-text"><b class="main-b">ЖҰМЫС БЕРУШІЛЕРГЕ АРНАЛҒАН ҚЫЗМЕТТЕР</b></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3544">Жұмыс берушілер үшін жұмыскерлерді таңдау</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3545">Жұмыс берушілердің тапсырыстары бойынша кәсіптік оқыту</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3546">Жұмыс орындарын құруды субсидиялау</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3547">Бос жұмыс орындары туралы мәліметтерді ұсыну</a></p>
+                <p class="main-text"><a class="links" href="https://www.enbek.kz/docs/kk/node/3548">Жұмысшылардың босатылуы туралы мәліметтерді ұсыну</a></p>
+            {% else %}
+            <p class="main-text"><b class="main-b">ЧТО ТАКОЕ ЦЕНТР ТРУДОВОЙ МОБИЛЬНОСТИ?</b></p>
+            <p class="main-text">Государственные центры трудовой мобильности действуют на основе закона Республики Казахстан «О занятости населения».</p>
+            <p class="main-text">Центры занятости созданы в 2011 году местными исполнительными органами в районах, в городах областного значения, в городах Алматы и Астана.</p>
+            <p class="main-text">В Казахстане действуют 200 центров трудовой мобильности.</p>
+            <p class="main-text">Главная цель работы центров трудовой мобильности – это оказание трудового посредничества гражданам и работодателям, реализация активных мер содействия занятости, организация социальной защиты от безработицы.</p>
+            <p class="main-text">Центры трудовой мобильности предоставляют услуги населению и работодателям.  Все услуги предоставляются бесплатно.</p>
+            <p class="main-text">В центрах трудовой мобильности работает специально подготовленный персонал и используются единые стандарты  работы.</p>
+            <p class="main-text"><b class="main-b">НОВЫЙ ФОРМАТ ПРЕДОСТАВЛЕНИЯ УСЛУГ РАБОТОДАТЕЛЯМ</b></p>
+            <p class="main-text">Индивидуальные консультации от персонального менеджера по всем интересующим вопросам</p>
+            <p class="main-text">Многоканальный порядок регистрации вакансий от работодателей – в центре занятости и на Электронной бирже труда (Enbek.kz)</p>
+            <p class="main-text">Доступ к самой крупной базе резюме</p>
+            <p class="main-text">Профессиональный подбор персонала для работодателей по требуемым навыкам</p>
+            <p class="main-text">Организация собеседований соискателей с работодателями, в том числе на базе центра занятости</p>
+            <p class="main-text">Организация краткосрочных курсов обучения потенциальных работников по заявкам работодателей</p>
+            <p class="main-text">Государственные субсидии при создании временных рабочих мест</p>
+            <p class="main-text"><b class="main-b">НОВЫЕ ПОДХОДЫ К ВОПРОСУ ТРУДОУСТРОЙСТВА ГРАЖДАН</b></p>
+            <p class="main-text">Адресный подход к каждому клиенту. Подготовка индивидуального плана трудоустройства</p>
+            <p class="main-text">Доступ к самой крупной базе вакансий</p>
+            <p class="main-text">Подбор вариантов вакансий. Содействие гражданам в поиске подходящей работы</p>
+            <p class="main-text">Обмен резюме с центрами занятости в режиме «Online» через  Электронную биржу труда</p>
+            <p class="main-text">Предоставление технических ресурсов для самостоятельного поиска работы – доступ к Электронной бирже труда в зонах самообслуживания в центре занятости</p>
+            <p class="main-text">Профессиональная ориентация по трудоустройству или обучению</p>
+            <p class="main-text">Организация профессионального обучения</p>
+            <p class="main-text"><a class="links" class="links" name="_GoBack"></a> Прием документов для назначения социальной выплаты на случай  потери работы и адресной социальной помощи</p>
+            <p class="main-text"><b class="main-b">СПЕЦИАЛЬНЫЕ МЕРОПРИЯТИЯ ЦЕНТРОВ ЗАНЯТОСТИ</b></p>
+            <p class="main-text">Ярмарки вакансий</p>
+            <p class="main-text">Информирование работодателей и граждан о положении на рынке труда</p>
+            <p class="main-text">Организация встреч учащихся с представителями различных профессий</p>
+            <p class="main-text">Организация роуд-шоу для целевых групп работодателей с презентацией услуг, предоставляемых центром занятости</p>
+            <p class="main-text">Психологическая поддержка безработных граждан</p>
+            <p class="main-text"><b class="main-b">УСЛУГИ ДЛЯ ГРАЖДАН</b></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3490">Регистрация в качестве лица, ищущего работу</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3489">Регистрация в качестве безработного лица</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3488">Поиск подходящих вакансий и содействие в трудоустройстве</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3487">Профессиональное обучение</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3486">Социальная профессиональная ориентация</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3485">Социальные рабочие места</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3483">Общественные работы</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3482">Молодежная практика</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3481">Консультации по микрокредитованию</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3480">Содействие добровольному переселению</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3479">Адресная социальная помощь</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3478">Социальные выплаты на случай потери работы</a></p>
+            <p class="main-text"><b class="main-b">УСЛУГИ ДЛЯ РАБОТОДАТЕЛЕЙ</b></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3495">Подбор персонала для работодателей</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3494">Профессиональное обучение по запросам работодателей</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3493">Субсидирование создания рабочих мест</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3492">Предоставление сведений о свободных рабочих местах (вакансиях)</a></p>
+            <p class="main-text"><a class="links" class="links" href="https://www.enbek.kz/docs/ru/node/3491">Предоставление сведений о высвобождении работников</a></p>
+            {% endif %}
+
+            
+        </div>
+    </div>
+    
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>

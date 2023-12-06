@@ -1,0 +1,110 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if language_code == 'kk' %}
+            {{ post.title2 }}
+        {% else %}
+            {{ post.title }}
+        {% endif %}
+     - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+
+    <link rel="stylesheet" href="{% static 'mySite/post.css' %}">
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+    
+    <div class="container">
+
+        <div class="nav3-container">
+            <div class="nav3">
+                <a href="{% url 'mySite:index' %}">{% trans 'Главная' %}&nbsp;→&nbsp;  </a>
+                <a href="{% url 'mySite:category' category.slug %}" class="nav3__category">
+                    {% if language_code == 'kk' %}
+                        {{ category.name2 }}
+                    {% else %}
+                        {{ category.name }}
+                    {% endif %}
+                    &nbsp;→&nbsp; 
+                </a>
+
+                <p class="nav3__title">
+                    {% if language_code == 'kk' %}
+                        {{ post.title2 }}
+                    {% else %}
+                        {{ post.title }}
+                    {% endif %}
+                </p>
+
+            </div>
+        </div>
+        <div class="post-container">
+
+
+            <h2>
+                {% if language_code == 'kk' %}
+                    {{ post.title2 }}
+                {% else %}
+                    {{ post.title }}
+                {% endif %}
+            </h2>
+
+            <p>{% trans 'Дата публикации' %}: {{ post.pub_date|date:date_format }}</p>
+            
+            {% if post.image %}
+                <img src="{{ post.image.url }}" alt="{{ post.title }}" class="image-title">
+            {% endif %}
+
+            {% if language_code == 'kk' %}
+                <p class="content_p">{{ post.content2 }}</p>
+            {% else %}
+                <p class="content_p">{{ post.content }}</p>
+            {% endif %}
+
+        
+            {% if post.images.all %}
+                <h3>{% trans 'Дополнительные изображения' %}:</h3>
+                <div class="image-slider">
+                    {% for image in post.images.all %}
+                        <img src="{{ image.image.url }}" alt="{{ post.title }}">
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            {% if post.links.all %}
+                <h3>Ссылки:</h3>
+                <ul>
+                    {% for link in post.links.all %}
+                        <li><a href="{{ link.url }}" target="_blank">
+                        {% if language_code == 'kk' %}
+                            {{ link.text2 }}
+                        {% else %}
+                            {{ link.text }}
+                        {% endif %}
+                        </a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        
+
+        
+    
+        <div class="share-buttons">
+            <h4>&nbsp;&nbsp;&nbsp;{% trans 'Поделиться' %}</h4>
+            <a href="whatsapp://send?text={% if language_code == 'kk' %}{{ post.title2 }}{% else %}{{ post.title }}{% endif %}: {{ request.build_absolute_uri }}" target="_blank" class="whatsapp">WhatsApp</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}" target="_blank" class="facebook">Facebook</a>
+            <a href="https://telegram.me/share/url?url={{ request.build_absolute_uri }}&text={% if language_code == 'kk' %}{{ post.title2 }}{% else %}{{ post.title }}{% endif %}" target="_blank" class="telegram">Telegram</a>
+        </div>
+    
+    </div>
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>

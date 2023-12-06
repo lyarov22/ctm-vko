@@ -1,0 +1,605 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-28 19:13+0600\n"
+"PO-Revision-Date: 2023-07-28 18:04+0600\n"
+"Last-Translator:   <123@123.123>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\mySite\templates\administration.html:12
+#: .\mySite\templates\administration.html:19
+msgid "Администрация"
+msgstr "Кәсіптік бағдар беру"
+
+#: .\mySite\templates\administration.html:22
+#: .\mySite\templates\adresnaja-socialnaja-pomoshh.html:24
+#: .\mySite\templates\besplatnye-onlajn-kursy-dlya-bezrabotnyh-grazhdan.html:24
+#: .\mySite\templates\career-centers.html:22
+#: .\mySite\templates\contacts.html:22
+#: .\mySite\templates\for-employers-kontrakt-pokolenii.html:24
+#: .\mySite\templates\for-employers-molodezhnaja-praktika.html:24
+#: .\mySite\templates\for-employers-obshhestvennye-raboty.html:24
+#: .\mySite\templates\for-employers-pervoe-rabochee-mesto.html:24
+#: .\mySite\templates\for-employers-serebrjanyj-vozrast.html:24
+#: .\mySite\templates\for-employers-socialnye-rabochie-mesta.html:24
+#: .\mySite\templates\instrukcija-po-registracii-rabotodatelej-na-portale-enbek-kz.html:24
+#: .\mySite\templates\kontrakt-pokolenii.html:24
+#: .\mySite\templates\memlekettik-granttar.html:24
+#: .\mySite\templates\molodezhnaja-praktika.html:24
+#: .\mySite\templates\mySite\footer.html:77
+#: .\mySite\templates\mySite\header2.html:25 .\mySite\templates\npa.html:22
+#: .\mySite\templates\o-centre.html:23
+#: .\mySite\templates\obshhestvennye-raboty.html:24
+#: .\mySite\templates\obuchenie-bastau-biznes.html:24
+#: .\mySite\templates\pervoe-rabochee-mesto.html:24
+#: .\mySite\templates\popolnenie-bazy-vakansii-i-poisk-soiskatelej.html:24
+#: .\mySite\templates\professionalnoe-obuchenie-na-rabochem-meste.html:24
+#: .\mySite\templates\professionalnoe-obuchenie-v-uchebnyh-organizaciyah.html:24
+#: .\mySite\templates\rabochie-mesta-po-kvotam.html:24
+#: .\mySite\templates\registraciya-trudovyh-dogovorov-na-portale-ebt.html:24
+#: .\mySite\templates\rus-otchet-po-kvotirovaniju-rabochih-mest.html:24
+#: .\mySite\templates\serebrjanyj-vozrast.html:24
+#: .\mySite\templates\socialnye-rabochie-mesta.html:24
+#: .\mySite\templates\specialnye-rabochie-mesta.html:24
+#: .\mySite\templates\structure.html:26
+#: .\mySite\templates\subsidirovanie-sozdanija-specialnyh-rabochih-mest-dlja-lic-s-invalidnostju.html:24
+#: .\mySite\templates\vysvobozhdenie-sotrudnikov.html:24
+msgid ""
+"Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-"
+"Казахстанской области"
+msgstr ""
+"Шығыс Қазақстан облысының «Еңбек мобильділігі орталығы» Коммуналдық "
+"Мемлекеттік Мекемесі"
+
+#: .\mySite\templates\adresnaja-socialnaja-pomoshh.html:12
+#: .\mySite\templates\adresnaja-socialnaja-pomoshh.html:21
+#: .\mySite\templates\mySite\index.html:292
+msgid "АДРЕСНАЯ СОЦИАЛЬНАЯ ПОМОЩЬ"
+msgstr "АТАУЛЫ ӘЛЕУМЕТТІК КӨМЕК"
+
+#: .\mySite\templates\besplatnye-onlajn-kursy-dlya-bezrabotnyh-grazhdan.html:12
+#: .\mySite\templates\besplatnye-onlajn-kursy-dlya-bezrabotnyh-grazhdan.html:21
+msgid ""
+"БЕЗРАБОТНЫМ ГРАЖДАНАМ ПРЕДОСТАВЛЯЕТСЯ ВОЗМОЖНОСТЬ ПРОЙТИ ОНЛАЙН КУРСЫ – "
+"БЕСПЛАТНО!"
+msgstr "ЖҰМЫССЫЗ АЗАМАТТАРҒА ОНЛАЙН КУРСТАРДАН ӨТУГЕ МҮМКІНДІК БЕРІЛЕДІ-ТЕГІН!"
+
+#: .\mySite\templates\career-centers.html:12
+msgid "Карьерные центры"
+msgstr "Мансап Орталықтары"
+
+#: .\mySite\templates\career-centers.html:19
+msgid "Карьерные центры "
+msgstr "Мансап Орталықтары"
+
+#: .\mySite\templates\contacts.html:12 .\mySite\templates\contacts.html:19
+#: .\mySite\templates\mySite\footer.html:115
+#: .\mySite\templates\mySite\header.html:201
+msgid "Контакты"
+msgstr "Байланыс"
+
+#: .\mySite\templates\departments.html:11
+msgid "О центре"
+msgstr "Орталық туралы"
+
+#: .\mySite\templates\for-employers-kontrakt-pokolenii.html:12
+#: .\mySite\templates\for-employers-kontrakt-pokolenii.html:21
+msgid "КОНТРАКТ ПОКОЛЕНИЙ"
+msgstr "ҰРПАҚ КЕЛІСІМШАРТЫ"
+
+#: .\mySite\templates\for-employers-molodezhnaja-praktika.html:12
+#: .\mySite\templates\for-employers-molodezhnaja-praktika.html:21
+msgid "МОЛОДЕЖНАЯ ПРАКТИКА"
+msgstr "ЖАСТАР ТӘЖІРИБЕСІ"
+
+#: .\mySite\templates\for-employers-obshhestvennye-raboty.html:12
+#: .\mySite\templates\for-employers-obshhestvennye-raboty.html:21
+msgid "ОБЩЕСТВЕННЫЕ РАБОТЫ"
+msgstr "АРНАЙЫ ЖҰМЫС ОРЫНДАРЫ"
+
+#: .\mySite\templates\for-employers-pervoe-rabochee-mesto.html:12
+#: .\mySite\templates\for-employers-pervoe-rabochee-mesto.html:21
+msgid "ПЕРВОЕ РАБОЧЕЕ МЕСТО"
+msgstr "ЖҰМЫС ОРЫНДАРЫНЫҢ КВОТАЛАРЫ"
+
+#: .\mySite\templates\for-employers-serebrjanyj-vozrast.html:12
+#: .\mySite\templates\for-employers-serebrjanyj-vozrast.html:21
+msgid "СЕРЕБРЯНЫЙ ВОЗРАСТ"
+msgstr "БАРЛЫҚ БАР ЖҰМЫС ОРЫНДАР"
+
+#: .\mySite\templates\for-employers-socialnye-rabochie-mesta.html:12
+#: .\mySite\templates\for-employers-socialnye-rabochie-mesta.html:21
+msgid "СОЦИАЛЬНЫЕ РАБОЧИЕ МЕСТА"
+msgstr "АРНАЙЫ ЖҰМЫС ОРЫНДАРЫ"
+
+#: .\mySite\templates\instrukcija-po-registracii-rabotodatelej-na-portale-enbek-kz.html:12
+#: .\mySite\templates\instrukcija-po-registracii-rabotodatelej-na-portale-enbek-kz.html:21
+msgid "ИНСТРУКЦИЯ ПО РЕГИСТРАЦИИ РАБОТОДАТЕЛЕЙ НА ПОРТАЛЕ ENBEK.KZ"
+msgstr "ПОРТАЛДА ЖҰМЫС БЕРУШІЛЕРДІ ТІРКЕУ ЖӨНІНДЕГІ БАСШЫЛЫҚ ЕНБЕК.KZ"
+
+#: .\mySite\templates\kontrakt-pokolenii.html:12
+#: .\mySite\templates\kontrakt-pokolenii.html:21
+#: .\mySite\templates\mySite\header.html:111
+#: .\mySite\templates\mySite\header.html:158
+msgid "Контракт поколений"
+msgstr "Ұрпақ келісімшарты"
+
+#: .\mySite\templates\memlekettik-granttar.html:12
+#: .\mySite\templates\memlekettik-granttar.html:21
+msgid ""
+"ИНФОРМАЦИЯ ПО ВЫДАЧИ ГРАНТОВ ДЛЯ РЕАЛИЗАЦИИ НОВЫХ БИЗНЕС-ИДЕЙ ПО РАЗВИТИЮ "
+"ПРЕДПРИНИМАТЕЛЬСТВА НА 2021-2025 ГОД"
+msgstr ""
+"2021-2025 ЖЫЛДАРҒА АРНАЛҒАН КӘСІПКЕРЛІКТІ ДАМЫТУ БОЙЫНША ЖАҢА БИЗНЕС-"
+"ИДЕЯЛАРДЫ ІСКЕ АСЫРУ ҮШІН ГРАНТТАР БЕРУ ЖӨНІНДЕГІ АҚПАРАТ"
+
+#: .\mySite\templates\molodezhnaja-praktika.html:12
+#: .\mySite\templates\molodezhnaja-praktika.html:21
+#: .\mySite\templates\mySite\header.html:108
+#: .\mySite\templates\mySite\header.html:155
+msgid "Молодежная практика"
+msgstr "Жастар тәжірибесі"
+
+#: .\mySite\templates\mySite\footer.html:29
+msgid "Акимат Восточно-Казахстанской области"
+msgstr "Шығыс Қазақстан облысының ақиматы"
+
+#: .\mySite\templates\mySite\footer.html:40
+msgid "Министерство труда и социальной защиты населения Республики Казахстан"
+msgstr ""
+"Қазақстан Республикасы Еңбек және халықты әлеуметтік қорғау министрлігі"
+
+#: .\mySite\templates\mySite\footer.html:51
+msgid "Электронная биржа труда enbek.kz"
+msgstr "Электрондық еңбек биржасы enbek.kz"
+
+#: .\mySite\templates\mySite\footer.html:62
+msgid "Агентство Республики Казахстан по противодействию коррупции"
+msgstr ""
+"Қазақстан Республикасының Сыбайлас жемқорлыққа қарсы іс-қимыл агенттігі"
+
+#: .\mySite\templates\mySite\footer.html:105
+msgid "Центр Трудовой Мобильности"
+msgstr "Еңбек мобильділігі орталығы"
+
+#: .\mySite\templates\mySite\footer.html:108
+#: .\mySite\templates\mySite\header.html:194
+#: .\mySite\templates\o-centre.html:12 .\mySite\templates\o-centre.html:21
+msgid "О Центре"
+msgstr "Орталық туралы"
+
+#: .\mySite\templates\mySite\footer.html:109
+#: .\mySite\templates\mySite\header.html:195
+msgid "Руководство"
+msgstr "Басшылық"
+
+#: .\mySite\templates\mySite\footer.html:110
+#: .\mySite\templates\mySite\header.html:196
+msgid "Структура"
+msgstr "Құрылым"
+
+#: .\mySite\templates\mySite\footer.html:111
+#: .\mySite\templates\mySite\header.html:197
+msgid "Карьерные Центры"
+msgstr "Мансап Орталықтары"
+
+#: .\mySite\templates\mySite\footer.html:112
+#: .\mySite\templates\mySite\header.html:198
+msgid "Отделы"
+msgstr "Бөлімдер"
+
+#: .\mySite\templates\mySite\footer.html:113
+#: .\mySite\templates\mySite\header.html:199
+msgid "Государственные закупки"
+msgstr "Мемлекеттік сатып алу"
+
+#: .\mySite\templates\mySite\footer.html:114
+#: .\mySite\templates\mySite\header.html:200 .\mySite\templates\npa.html:12
+#: .\mySite\templates\npa.html:19
+msgid "Нормативно-правовые акты"
+msgstr "Нормативтік құқықтық актілер"
+
+#: .\mySite\templates\mySite\footer.html:121
+msgid "Услуги для граждан"
+msgstr "Азаматтарға арналған қызметтер"
+
+#: .\mySite\templates\mySite\footer.html:123
+#: .\mySite\templates\mySite\header.html:96
+msgid "Онлайн услуги"
+msgstr "Онлайн қызметтер"
+
+#: .\mySite\templates\mySite\footer.html:124
+#: .\mySite\templates\mySite\header.html:97
+msgid "Переселение"
+msgstr "Қоныс аудару"
+
+#: .\mySite\templates\mySite\footer.html:125
+msgid "Службы занятости"
+msgstr "Жұмыспен қамту қызметтері"
+
+#: .\mySite\templates\mySite\footer.html:126
+#: .\mySite\templates\mySite\header.html:99
+msgid "Профориентация"
+msgstr "Кәсіптік бағдар беру"
+
+#: .\mySite\templates\mySite\footer.html:127
+msgid "Аналитика"
+msgstr "Аналитика"
+
+#: .\mySite\templates\mySite\footer.html:128
+#: .\mySite\templates\mySite\header.html:98
+msgid "Атласы профессий"
+msgstr "Кәсіп атластары"
+
+#: .\mySite\templates\mySite\footer.html:129
+msgid "Государственная служба"
+msgstr "Мемлекеттік қызмет"
+
+#: .\mySite\templates\mySite\footer.html:134
+msgid "Антикоррупционная политика"
+msgstr "Сыбайлас жемқорлыққа қарсы саясат"
+
+#: .\mySite\templates\mySite\footer.html:138
+msgid "Тест"
+msgstr "Тест"
+
+#: .\mySite\templates\mySite\header.html:16
+msgid "Центр Трудовой мобильности Восточно-Казахстанской области"
+msgstr "Шығыс Қазақстан облысының Еңбек мобильділігі орталығы"
+
+#: .\mySite\templates\mySite\header.html:94
+msgid "ГРАЖДАНАМ"
+msgstr "Азаматтарға"
+
+#: .\mySite\templates\mySite\header.html:101
+msgid "Ищите работу?"
+msgstr "Жұмыс іздеп жүрсіз бе?"
+
+#: .\mySite\templates\mySite\header.html:103
+msgid "Для лиц с инвалидностью"
+msgstr "Мүгедектігі бар адамдар үшін"
+
+#: .\mySite\templates\mySite\header.html:104
+msgid "Для молодежи"
+msgstr "Жастарға арналған"
+
+#: .\mySite\templates\mySite\header.html:105
+msgid "С предоставлением жилья"
+msgstr "Тұрғын үймен қамтамасыз етеді"
+
+#: .\mySite\templates\mySite\header.html:107
+#: .\mySite\templates\mySite\header.html:154
+#: .\mySite\templates\obshhestvennye-raboty.html:12
+#: .\mySite\templates\obshhestvennye-raboty.html:21
+msgid "Общественные работы"
+msgstr "Қоғамдық жұмыстар"
+
+#: .\mySite\templates\mySite\header.html:109
+#: .\mySite\templates\mySite\header.html:156
+#: .\mySite\templates\pervoe-rabochee-mesto.html:12
+#: .\mySite\templates\pervoe-rabochee-mesto.html:21
+msgid "Первое рабочее место"
+msgstr "Бірінші жұмыс орны"
+
+#: .\mySite\templates\mySite\header.html:110
+#: .\mySite\templates\mySite\header.html:136
+#: .\mySite\templates\mySite\header.html:157
+#: .\mySite\templates\socialnye-rabochie-mesta.html:12
+#: .\mySite\templates\socialnye-rabochie-mesta.html:21
+msgid "Социальные рабочие места"
+msgstr "Әлеуметтік жұмыс орындары"
+
+#: .\mySite\templates\mySite\header.html:112
+#: .\mySite\templates\mySite\header.html:159
+#: .\mySite\templates\serebrjanyj-vozrast.html:12
+#: .\mySite\templates\serebrjanyj-vozrast.html:21
+msgid "Серебрянный возраст"
+msgstr "Күміс жас"
+
+#: .\mySite\templates\mySite\header.html:113
+msgid "ВСЕ ДОСТУПНЫЕ ВАКАНСИИ"
+msgstr "БАРЛЫҚ БАР ЖҰМЫС ОРЫНДАР"
+
+#: .\mySite\templates\mySite\header.html:118
+msgid "Есть бизнес идея?"
+msgstr "Бизнес идеясы бар?"
+
+#: .\mySite\templates\mySite\header.html:120
+msgid "Обучение Бастау Бизнес"
+msgstr "Бастау Бизнес Оқыту"
+
+#: .\mySite\templates\mySite\header.html:121
+msgid "Государственные гранты"
+msgstr "Мемлекеттік гранттар"
+
+#: .\mySite\templates\mySite\header.html:125
+msgid "Получить востребованную квалификацию на рынке труда"
+msgstr "Еңбек нарығында сұранысқа ие біліктілікті алу"
+
+#: .\mySite\templates\mySite\header.html:127
+#: .\mySite\templates\mySite\header.html:165
+msgid "Профессиональное обучение в учебных организациях"
+msgstr "Білім беру ұйымдарындағы кәсіптік оқыту"
+
+#: .\mySite\templates\mySite\header.html:128
+#: .\mySite\templates\mySite\header.html:166
+msgid "Профессиональное обучение на рабочем месте"
+msgstr "Жұмыс орнында кәсіптік оқыту"
+
+#: .\mySite\templates\mySite\header.html:129
+msgid "Бесплатные онлайн курсы для безработных граждан"
+msgstr "Жұмыссыз азаматтарға тегін онлайн курстардан өту мүмкіндігі беріледі!"
+
+#: .\mySite\templates\mySite\header.html:133
+msgid "Поддержка социально-уязвимых граждан"
+msgstr "Әлеуметтік осал азаматтарды қолдау"
+
+#: .\mySite\templates\mySite\header.html:135
+msgid "Адресная социальная помощь"
+msgstr "Атаулы әлеуметтік көмек"
+
+#: .\mySite\templates\mySite\header.html:137
+msgid "Рабочие места по квотам"
+msgstr "Квота бойынша жұмыс орындары"
+
+#: .\mySite\templates\mySite\header.html:143
+msgid "РАБОТОДАТЕЛЯМ"
+msgstr "Жұмыс берушілерге"
+
+#: .\mySite\templates\mySite\header.html:145
+msgid "Ищите сотрудников?"
+msgstr "Қызметкерлерді іздеп жүрсіз бе?"
+
+#: .\mySite\templates\mySite\header.html:147
+msgid "Инструкция по регистрации работодателей на портале enbek.kz"
+msgstr "Порталда қызметкерлерді тіркеу бойынша нұсқаулық enbek.kz"
+
+#: .\mySite\templates\mySite\header.html:148
+msgid "Пополнение базы вакансий и поиск соискателей"
+msgstr "Бос жұмыс орындарының дерекқорын толықтыру және үміткерлерді іздеу"
+
+#: .\mySite\templates\mySite\header.html:152
+msgid "Субсидирование государством рабочих мест"
+msgstr "Мемлекеттің жұмыс орындарын субсидиялауы"
+
+#: .\mySite\templates\mySite\header.html:163
+msgid "Нуждаетесь в квалификацированных кадрах?"
+msgstr "Білікті кадрлар қажет пе?"
+
+#: .\mySite\templates\mySite\header.html:170
+msgid "Хотите трудоустроить лиц с инвалидностью?"
+msgstr "Мүгедектігі бар адамдарды жұмысқа орналастырғыңыз келе ме?"
+
+#: .\mySite\templates\mySite\header.html:172
+msgid "Субсидирование создания специальных рабочих мест"
+msgstr "Арнайы жұмыс орындарын құруды субсидиялау"
+
+#: .\mySite\templates\mySite\header.html:176
+msgid "Регистрация трудовых договоров на портале ЭБТ"
+msgstr "ЭЕБ порталында еңбек шарттарын тіркеу"
+
+#: .\mySite\templates\mySite\header.html:177
+msgid "Высвобождение сотрудников"
+msgstr "Қызметкерлерді босату"
+
+#: .\mySite\templates\mySite\header.html:178
+msgid "Отчет по квотированию рабочих мест"
+msgstr "Жұмыс орындар квотасы туралы есеп"
+
+#: .\mySite\templates\mySite\header.html:179
+msgid "Новости для работодателей"
+msgstr "Жұмыс берушілерге арналған жаңалықтар"
+
+#: .\mySite\templates\mySite\header.html:183
+msgid "НОВОСТИ"
+msgstr "Жаңалықтар"
+
+#: .\mySite\templates\mySite\header.html:185
+msgid "Новости"
+msgstr "Жаңалықтар"
+
+#: .\mySite\templates\mySite\header.html:186
+msgid "Объявления"
+msgstr "Хабарландырулар"
+
+#: .\mySite\templates\mySite\header.html:187
+msgid "СМИ о нас"
+msgstr "БАҚ біз туралы"
+
+#: .\mySite\templates\mySite\header.html:188
+msgid "Инфографика"
+msgstr "Инфографика"
+
+#: .\mySite\templates\mySite\header.html:192
+msgid "О ЦЕНТРЕ"
+msgstr "ОРТАЛЫҚ ТУРАЛЫ"
+
+#: .\mySite\templates\mySite\header2.html:31
+#: .\mySite\templates\mySite\post.html:27
+msgid "Главная"
+msgstr "Басты бет"
+
+#: .\mySite\templates\mySite\index.html:26
+msgid "Последние новости"
+msgstr "Соңғы жаңалықтар"
+
+#: .\mySite\templates\mySite\index.html:74
+msgid "РАБОЧИЕ МЕСТА СУБСИДИРУЕМЫЕ ГОСУДАРСТВОМ"
+msgstr "МЕМЛЕКЕТ СУБСИДИЯЛАЙТЫН ЖҰМЫС ОРЫНДАРЫ"
+
+#: .\mySite\templates\mySite\index.html:85
+msgid "молодежная практика"
+msgstr "жастар тәжірибесі"
+
+#: .\mySite\templates\mySite\index.html:95
+msgid "первое рабочее место"
+msgstr "бірінші жұмыс орны"
+
+#: .\mySite\templates\mySite\index.html:105
+msgid "контракт поколений"
+msgstr "ұрпақ келісімшарты"
+
+#: .\mySite\templates\mySite\index.html:118
+msgid "общественные работы"
+msgstr "қоғамдық жұмыстар"
+
+#: .\mySite\templates\mySite\index.html:129
+msgid "социальные рабочие места"
+msgstr "әлеуметтік жұмыс орындары"
+
+#: .\mySite\templates\mySite\index.html:140
+msgid "серебрянный возраст"
+msgstr "күміс жас"
+
+#: .\mySite\templates\mySite\index.html:144
+msgid "ВАКАНСИИ ПО КАТЕГОРИЯМ"
+msgstr "САНАТ БОЙЫНША БОС ЖҰМЫС ОРЫНДАРЫ"
+
+#: .\mySite\templates\mySite\index.html:154
+msgid "для лиц с инвалидностью"
+msgstr "мүгедектігі бар адамдар үшін"
+
+#: .\mySite\templates\mySite\index.html:164
+msgid "для молодежи"
+msgstr "жастар үшін"
+
+#: .\mySite\templates\mySite\index.html:174
+msgid "с предоставлением жилья"
+msgstr "тұрғын үймен"
+
+#: .\mySite\templates\mySite\index.html:178
+msgid "СМОТРЕТЬ ВСЕ ДОСТУПНЫЕ ВАКАНСИИ"
+msgstr "БАРЛЫҚ БОС ЖҰМЫС ОРЫНДАРЫН ҚАРАҢЫЗ"
+
+#: .\mySite\templates\mySite\index.html:191
+msgid "ПОДДЕРЖКА ПРЕДПРИНИМАТЕЛЬСКИХ ИНИИЦИАТИВ"
+msgstr "КӘСІПКЕРЛІК БАСТАМАЛАРДЫ ҚОЛДАУ"
+
+#: .\mySite\templates\mySite\index.html:196
+msgid "Обучение основам предпринемательства по проекту \"БАСТАУ БИЗНЕС\""
+msgstr "\"БАСТАУ БИЗНЕС\"жобасы бойынша кәсіпкерлік негіздеріне оқыту"
+
+#: .\mySite\templates\mySite\index.html:202
+msgid "государственный грант дляреализации новых бизнес-идей в РАЗМЕРЕ 400МРП"
+msgstr ""
+"400 АЕК мөлшерінде жаңа бизнес-идеяларды іске асыруға арналған мемлекеттік "
+"грант"
+
+#: .\mySite\templates\mySite\index.html:220
+msgid "ПОЛУЧИТЬ ВОСТРЕБОВАННУЮ КВАЛИФИКАЦИЮ"
+msgstr "ҚАЖЕТТІ БІЛІКТІЛІКТІ АЛУ"
+
+#: .\mySite\templates\mySite\index.html:228
+#: .\mySite\templates\professionalnoe-obuchenie-v-uchebnyh-organizaciyah.html:12
+#: .\mySite\templates\professionalnoe-obuchenie-v-uchebnyh-organizaciyah.html:21
+msgid "ПРОФЕССИОНАЛЬНОЕ ОБУЧЕНИЕ В УЧЕБНЫХ ОРГАНИЗАЦИЯХ"
+msgstr "ОҚУ ҰЙЫМДАРЫНДА КӘСІПТІК ОҚЫТУ"
+
+#: .\mySite\templates\mySite\index.html:237
+msgid "БЕСПЛАТНЫЕ ОНЛАЙН КУРСЫ ДЛЯ ВСЕХ ГРАЖДАН"
+msgstr "БАРЛЫҚ АЗАМАТТАРҒА АРНАЛҒАН ТЕГІН ОНЛАЙН КУРСТАР"
+
+#: .\mySite\templates\mySite\index.html:255
+#: .\mySite\templates\professionalnoe-obuchenie-na-rabochem-meste.html:12
+#: .\mySite\templates\professionalnoe-obuchenie-na-rabochem-meste.html:21
+msgid "ПРОФЕССИОНАЛЬНОЕ ОБУЧЕНИЕ НА РАБОЧЕМ МЕСТЕ"
+msgstr "ЖҰМЫС ОРНЫНДА КӘСІПТІК ОҚЫТУ"
+
+#: .\mySite\templates\mySite\index.html:264
+msgid "ПОСМОТРЕТЬ ВСЕ ДОСТУПНЫЕ ВАКАНСИИ"
+msgstr "БАРЛЫҚ БОС ЖҰМЫС ОРЫНДАРЫН ҚАРАҢЫЗ"
+
+#: .\mySite\templates\mySite\index.html:287
+msgid "ПОДДЕРЖКА СОЦИАЛЬНО-УЯЗВИМЫХ ГРАЖДАН"
+msgstr "ӘЛЕУМЕТТІК ОСАЛ АЗАМАТТАРДЫ ҚОЛДАУ"
+
+#: .\mySite\templates\mySite\index.html:301
+msgid "СПЕЦИАЛЬНЫЕ РАБОЧИЕ МЕСТА"
+msgstr "АРНАЙЫ ЖҰМЫС ОРЫНДАРЫ"
+
+#: .\mySite\templates\mySite\index.html:311
+msgid "КВОТЫ РАБОЧИХ МЕСТ"
+msgstr "ЖҰМЫС ОРЫНДАРЫНЫҢ КВОТАЛАРЫ"
+
+#: .\mySite\templates\mySite\post.html:58
+msgid "Дата публикации"
+msgstr "Жарияланған күні"
+
+#: .\mySite\templates\mySite\post.html:67
+msgid "Дополнительные изображения"
+msgstr "Қосымша суреттер"
+
+#: .\mySite\templates\mySite\post.html:89
+msgid "Поделиться"
+msgstr "Бөлісу"
+
+#: .\mySite\templates\obuchenie-bastau-biznes.html:12
+#: .\mySite\templates\obuchenie-bastau-biznes.html:21
+msgid "ПОРЯДОК ОБУЧЕНИЯ ОСНОВАМ ПРЕДПРИНИМАТЕЛЬСТВА «БАСТАУ БИЗНЕС»"
+msgstr "КӘСІПКЕРЛІК БАСТАМАЛАРДЫ ҚОЛДАУ"
+
+#: .\mySite\templates\popolnenie-bazy-vakansii-i-poisk-soiskatelej.html:12
+#: .\mySite\templates\popolnenie-bazy-vakansii-i-poisk-soiskatelej.html:21
+msgid "ПОПОЛНЕНИЕ БАЗЫ ВАКАНСИИ И ПОИСК СОИСКАТЕЛЕЙ"
+msgstr "ЖҰМЫС БАЗАСЫН ТОЛЫҚТЫРУ ЖӘНЕ ІЗДЕНУШІЛЕРДІ ІЗДЕУ"
+
+#: .\mySite\templates\rabochie-mesta-po-kvotam.html:12
+#: .\mySite\templates\rabochie-mesta-po-kvotam.html:21
+msgid "ОБ УСТАНОВЛЕНИИ КВОТЫ РАБОЧИХ МЕСТ НА 2023 ГОД"
+msgstr "АРНАЙЫ ЖҰМЫС ОРЫНДАРЫ"
+
+#: .\mySite\templates\registraciya-trudovyh-dogovorov-na-portale-ebt.html:12
+#: .\mySite\templates\registraciya-trudovyh-dogovorov-na-portale-ebt.html:21
+msgid "РЕГИСТРАЦИЯ ТРУДОВЫХ ДОГОВОРОВ НА ПОРТАЛЕ ЭБТ"
+msgstr "ЕҢБЕК ШАРТТАРЫН ЭБТ ПОРТАЛЫНДА ТІРКЕУ"
+
+#: .\mySite\templates\rus-otchet-po-kvotirovaniju-rabochih-mest.html:12
+#: .\mySite\templates\rus-otchet-po-kvotirovaniju-rabochih-mest.html:21
+#: .\mySite\templates\vysvobozhdenie-sotrudnikov.html:12
+#: .\mySite\templates\vysvobozhdenie-sotrudnikov.html:21
+msgid "ОТЧЕТ ПО КВОТИРОВАНИЮ РАБОЧИХ МЕСТ"
+msgstr "ЖҰМЫС ОРЫНДАРЫНЫҢ КВОТАЛАРЫ"
+
+#: .\mySite\templates\specialnye-rabochie-mesta.html:12
+#: .\mySite\templates\specialnye-rabochie-mesta.html:21
+msgid "Специальные рабочие места"
+msgstr "Әлеуметтік жұмыс орындары"
+
+#: .\mySite\templates\structure.html:15
+msgid "Организационная структура"
+msgstr "Ұйымдық құрылым"
+
+#: .\mySite\templates\structure.html:23
+msgid ""
+"Организационная структура КГУ \"Центр трудовой мобильности\" ГУ \"Управление "
+"координации занятости и социальных программ Восточно-Казахстанской области"
+msgstr ""
+"Шығыс Қазақстан облысының жұмыспен қамтуды үйлестіру және әлеуметтік \n"
+"бағдарламалар басқармасының «Шығыс Қазақстан облысының еңбек \n"
+"мобильділігі орталығы» коммуналдық мемлекеттік мекемесінің құрылымы"
+
+#: .\mySite\templates\subsidirovanie-sozdanija-specialnyh-rabochih-mest-dlja-lic-s-invalidnostju.html:12
+#: .\mySite\templates\subsidirovanie-sozdanija-specialnyh-rabochih-mest-dlja-lic-s-invalidnostju.html:21
+msgid ""
+"СУБСИДИРОВАНИЕ СОЗДАНИЯ СПЕЦИАЛЬНЫХ РАБОЧИХ МЕСТ ДЛЯ ЛИЦ С ИНВАЛИДНОСТЬЮ"
+msgstr "МҮГЕДЕКТІГІ БАР АДАМДАР ҮШІН АРНАЙЫ ЖҰМЫС ОРЫНДАРЫН ҚҰРУДЫ СУБСИДИЯЛАУ"
+
+#, fuzzy
+#~ msgid "Нормативно-правовые акты "
+#~ msgstr "Нормативтік құқықтық актілер"
+
+#, fuzzy
+#~ msgid "Контакты "
+#~ msgstr "Байланыс"

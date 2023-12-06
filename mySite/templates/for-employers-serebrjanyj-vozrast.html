@@ -1,0 +1,61 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'mySite/header2.css' %}">
+    <title>{% trans 'СЕРЕБРЯНЫЙ ВОЗРАСТ' %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+    
+
+    <div class="head">
+        <div class="container">
+            <div class="head-h">
+            <h1>{% trans 'СЕРЕБРЯНЫЙ ВОЗРАСТ' %}</h1>
+              
+ {% load i18n %}
+            <p>{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="conteiner">
+        <div class="mian-section">
+            <div class="container">
+                {% if language_code == 'ru' %}
+                <p class="white-space-wrap__p">
+                    Проект Серебряный возраст организуется на предприятиях и организациях всех форм собственности, при этом к участию допускаются работодатели, которые регулярно производят налоговые и другие социальные отчисления, у которых отсутствует просроченная задолженность по заработной плате, и действующие более одного года.
+
+                    Количество создаваемых временных рабочих мест для организации проекта Серебряный возраст на очередной финансовый год составляет не более 20% от списочной численностью работников
+
+                    Работодатель посредством «личного кабинета» на Электронной бирже труда подает электронную заявку на создание первого рабочего места в центр занятости на очередной финансовый год в срок до 1 ноября текущего финансового года.
+                </p>
+                <a href="https://www.enbek.kz/ru/page/creation-of-subsided-jobs"  class="show-this"><span>Подать заявку </span></a>
+                {% else %}
+                <p class="white-space-wrap__p">
+                    Күміс жас жобасы барлық меншік нысанындағы кәсіпорындар мен ұйымдарда ұйымдастырылады, бұл ретте жалақы бойынша мерзімі өткен берешегі жоқ және бір жылдан астам жұмыс істейтін салық және басқа да әлеуметтік аударымдарды тұрақты жүргізетін жұмыс берушілер қатысуға жіберіледі.
+
+                    Кезекті қаржы жылына арналған күміс жас жобасын ұйымдастыру үшін құрылатын уақытша жұмыс орындарының саны қызметкерлердің тізімдік санының 20% - нан аспайды
+
+                    Жұмыс беруші электрондық еңбек биржасында "жеке кабинет" арқылы ағымдағы қаржы жылының 1 қарашасына дейінгі мерзімде кезекті қаржы жылына арналған Жұмыспен қамту орталығына бірінші жұмыс орнын құруға электрондық өтінім береді.
+                </p>
+                <a href="https://www.enbek.kz/kz/page/creation-of-subsided-jobs"  class="show-this"><span>Өтініш беру</span></a>
+                {% endif %}
+        
+                 <div class="video-player">
+                    <iframe width="1272" height="720" src="https://www.youtube.com/embed/rWvyakXQiKk" title="Работодателям_Организация субсидируемых рабочих мест" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+    
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>

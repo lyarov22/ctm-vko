@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'mySite/header2.css' %}">
+    <title>{% trans 'ОТЧЕТ ПО КВОТИРОВАНИЮ РАБОЧИХ МЕСТ' %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+    
+
+    <div class="head">
+        <div class="container">
+            <div class="head-h">
+            <h1>{% trans 'ОТЧЕТ ПО КВОТИРОВАНИЮ РАБОЧИХ МЕСТ' %}</h1>
+              
+ {% load i18n %}
+            <p>{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="conteiner">
+        <div class="mian-section">
+            <div class="container">
+                <p class="white-space-wrap__p"><a class="a_link" href="{% static 'Инструкция-для-работодателей-по-регистрации-высвобождаемых-сотрудников.pdf' %}" download>
+                {% if language_code == 'ru' %}
+                    Инструкция по регистрации высвобождаемых сотрудников
+                {% else %}
+                <p class="white-space-wrap__p">
+                    Босатылған қызметкерлерді тіркеу жөніндегі Нұсқаулықты
+                </p>
+                {% endif %}
+            </a>
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>

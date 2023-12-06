@@ -1,0 +1,166 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+  <head>
+    <link rel="stylesheet" href="{% static 'mySite/footer.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/swiper-bundle.min.css' %}"
+    />
+  <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+  </head>
+  <body>
+    <footer>
+      <div class="footer-line"></div>
+      <div class="footer-container">
+        <div class="container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="https://www.gov.kz/memleket/entities/akimvko?lang=ru" class="partner"
+                  ><img class="footer-links__img"
+                    src="{% static 'img/gerb.png' %}"
+                    alt=""
+                    style="object-fit: contain; height: 80px; width: 100%"
+                />
+                  <p>{% trans 'Акимат Восточно-Казахстанской области' %}</p>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="https://www.gov.kz/memleket/entities/enbek?lang=ru" class="partner"
+                  ><img class="footer-links__img"
+                    src="{% static 'img/gerb.png' %}"
+                    alt=""
+                    style="object-fit: contain; height: 80px; width: 100%"
+                />
+                  <p>{% trans 'Министерство труда и социальной защиты населения Республики Казахстан' %}</p>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="https://www.enbek.kz/ru" class="partner"
+                  ><img class="footer-links__img"
+                    src="{% static 'img/svg/enbek.svg' %}"
+                    alt=""
+                    style="object-fit: contain; height: 80px; width: 100%"
+                />
+                  <p>{% trans 'Электронная биржа труда enbek.kz' %}</p>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="https://www.gov.kz/memleket/entities/anticorruption?lang=ru" class="partner"
+                  ><img class="footer-links__img"
+                    src="{% static 'img/antikor-partner.png' %}"
+                    alt=""
+                    style="object-fit: contain; height: 80px; width: 100%;"
+                />
+                  <p>{% trans 'Агентство Республики Казахстан по противодействию коррупции' %}</p>
+                </a>
+              </div>
+              
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="foooter-main-content">
+        <div class="container">
+          <div class="footer-section">
+            <div class="section f-section">
+              <img src="{% static 'img/gerb-1.png' %} " alt="" />
+              <p>{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}
+
+              </p>
+              <ul>
+                <li>
+                  <a href="#" class="footer-links"
+                    ><img class="footer-links__img"  src="{% static 'img/svg/facebook.svg' %}" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="footer-links"
+                    ><img class="footer-links__img" src="{% static 'img/svg/instagram.svg' %}" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="footer-links"
+                    ><img class="footer-links__img" src="{% static 'img/svg/telegram.svg' %}" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" class="footer-links"
+                    ><img class="footer-links__img" src="{% static 'img/svg/youtube.svg' %}" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section 2-section">
+              <h1>{% trans 'Центр Трудовой Мобильности' %}
+              </h1>
+              <ul>
+                <li><a href="{% url 'mySite:new_page' 'o-centre' %}">{% trans 'О Центре' %}</a></li>
+                <li><a href="{% url 'mySite:new_page' 'administration' %}">{% trans 'Руководство' %}</a></li>
+                <li><a href="{% url 'mySite:new_page' 'structure' %}">{% trans 'Структура' %}</a></li>
+                <li><a href="{% url 'mySite:new_page' 'career-centers' %}">{% trans 'Карьерные Центры' %}</a></li>
+                <li><a href="{% url 'mySite:category' 'otdely' %}">{% trans 'Отделы' %}</a></li>
+                <li><a href="{% url 'mySite:category' 'gosudarstvennye-zakupki' %}">{% trans 'Государственные закупки' %}</a></li>
+                <li><a href="{% url 'mySite:new_page' 'npa' %}">{% trans 'Нормативно-правовые акты' %}</a></li>
+                <li><a href="{% url 'mySite:new_page' 'contacts' %}">{% trans 'Контакты' %}</a></li>
+             
+              </ul>
+            </div>
+
+            <div class="section 3-section">
+              <h1>{% trans 'Услуги для граждан' %}</h1>
+              <ul>
+                <li><a href="https://www.enbek.kz/ru/how-to-get-state-employment-support">{% trans 'Онлайн услуги' %}</a></li>
+                <li><a href="https://www.enbek.kz/ru/resettlement">{% trans 'Переселение' %}</a></li>
+                <li><a href="https://www.enbek.kz/ru/employment-services">{% trans 'Службы занятости' %}</a></li>
+                <li><a href="https://www.enbek.kz/ru/barret">{% trans 'Профориентация' %}</a></li>
+                <li><a href="https://www.enbek.kz/ru/analytical-data">{% trans 'Аналитика' %}</a></li>
+                <li><a href="https://www.enbek.kz/ru/atlases-professions">{% trans 'Атласы профессий' %}</a></li>
+                <li><a href="https://www.enbek.kz/ru/search?type=vac&passwd%5B5%5D=5">{% trans 'Государственная служба' %}</a></li>
+              </ul>
+            </div>
+
+            <div class="section 4-section">
+              <h1>{% trans 'Антикоррупционная политика' %}
+
+              </h1>
+              <ul>
+                <li><a href="">{% trans 'Тест' %}</a></li>
+              </ul>
+            </div>
+            
+          </div>
+          <p class="fedorovP">Coded by ©&nbsp;<a class="fedorovA" href="https://github.com/lyarov22"> Ilya Fedorov </a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 5,
+        speed: 800,
+      });
+    </script>
+  
+  </body>
+</html>

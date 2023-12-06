@@ -1,0 +1,60 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'mySite/header2.css' %}">
+    <title>{% trans 'Администрация' %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+    <div class="head">
+        <div class="container">
+            <div class="head-h">
+            <h1>{% trans 'Администрация' %}</h1>
+              
+ {% load i18n %}
+            <p>{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}</p>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mian-section">
+        <div class="dir-item">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <!-- <img class="w-100 " src="{% static 'img/admin1.png' %}" style="background-image: url('https://czn.kz/wp-content/uploads/2023/06/IMG_5689-min-scaled.jpg');background-size: cover;background-position: center;background-repeat: no-repeat; border-radius: 60px 0px;"> -->
+                    <h5 class="mb-0 mt-3"><strong><b>ДИРЕКТОР</b></strong></h5>
+                    <p class="main-text">Астанбаев Бейбіт Канапиянович</p>
+                    <p class="white-space-wrap__p">
+                        <b>Контакты:</b>
+
+                        Адрес: <a class="a_link" href="https://2gis.kz/ustkam/firm/70000001018565683/tab/services">г. Усть-Каменогорск, пр. Шакарима, 149/10</a>
+
+                        Телефон: <a class="a_link" href="tel:+77232700670">+7 (723) 270 06 70</a>
+
+                        Электронная почта: <a class="a_link" href="mailto:a.arspek@akimvko.gov.kz">a.arspek@akimvko.gov.kz</a>
+                    </p>
+                </div>
+                <div class="col-md-9">
+                    
+                </div>
+            </div>
+            <hr class="my-5">
+        </div>
+
+    
+    
+    </div>
+    
+    </div>
+    
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>

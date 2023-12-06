@@ -1,0 +1,355 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+
+<html lang="{ language_code }">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{% static 'mySite/style.css' %}">
+
+
+  </head>
+  <body>
+    {% include 'mySite/header.html' %} 
+
+    <div class="main">
+
+      <div class="main-news">
+        
+
+        <div class="main-center">
+
+          <div class="main-center__swiper-container">
+            <p class="main-center__title">{% trans 'Последние новости' %}</p>
+             <!--Свайпер-->
+            <div class="swiper-container1">
+              <div class="swiper-wrapper">
+                 
+                {% for post in recent_posts %}
+                  <div class="swiper-slide first-slide">
+                    <a href="{% url 'mySite:post' post.slug %}">
+                      {% if post.image %}
+                        <img src="{{ post.image.url }}" alt="{% if language_code == 'kk' %}{{ post.title2 }}{% else %}{{ post.title }}{% endif %}">
+                      {% endif %}
+                        <p>{{ post.pub_date }}</p>
+                        <p>{% if language_code == 'kk' %}{{ post.title2 }}{% else %}{{ post.title }}{% endif %}</p>
+                    </a>
+                    
+
+                  </div>
+                {% endfor %}
+                
+                
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% if language_code == 'ru' %}
+      <a href="https://www.gov.kz/memleket/entities/anticorruption?lang=ru"><img class="main__antikor" src="{% static 'img/antikor-ru.jpg' %}" alt="" /></a>
+      {% else %}
+      <p class="white-space-wrap__p">
+        <a href="https://www.gov.kz/memleket/entities/anticorruption?lang=ru"><img class="main__antikor" src="{% static 'img/antikor-kz.jpg' %}" alt="" /></a>
+      </p>
+      {% endif %}
+      
+    </div>
+
+    <div class="looking-job">
+      <div class="container">
+        <div class="look-section">
+          <div class="left-look-block">
+            <div class="abs">
+             
+            </div>
+          </div>
+
+          <div class="right-look-block">
+            
+            <h1 class="look_title">
+              {% trans 'РАБОЧИЕ МЕСТА СУБСИДИРУЕМЫЕ ГОСУДАРСТВОМ' %}
+              
+            </h1>
+            <div class="loook-3">
+              <a href="{% url 'mySite:new_page' 'molodezhnaja-praktika' %}" class="look-box"
+                ><img
+                  src="{% static 'img/main-work-goverment-1.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">{% trans 'молодежная практика' %}</div>
+              </a>
+              <a href="{% url 'mySite:new_page' 'pervoe-rabochee-mesto' %}" class="look-box"
+                ><img
+                  src="{% static 'img/main-work-goverment-3.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">
+                  {% trans 'первое рабочее место' %}
+                </div>
+              </a>
+              <a href="{% url 'mySite:new_page' 'kontrakt-pokolenii' %}" class="look-box"
+                ><img
+                  src="{% static 'img/main-work-goverment-5.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">{% trans 'контракт поколений' %}</div></a
+              >
+            </div>
+            <div class="margin"></div>
+            <div class="loook-3">
+              <a href="{% url 'mySite:new_page' 'obshhestvennye-raboty' %}" class="look-box"
+                ><img
+                  src="{% static 'img/main-work-goverment-2.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">
+                  {% trans 'общественные работы' %}
+                </div>
+              </a>
+              <a href="{% url 'mySite:new_page' 'socialnye-rabochie-mesta' %}" class="look-box"
+                ><img
+                  src="{% static 'img/main-work-goverment-4.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">
+                  {% trans 'социальные рабочие места' %}
+                </div>
+              </a>
+              <a href="{% url 'mySite:new_page' 'serebrjanyj-vozrast' %}" class="look-box"
+                ><img
+                  src="{% static 'img/main-work-goverment-6.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">
+                  {% trans 'серебрянный возраст' %}
+                </div></a
+              >
+            </div>
+            <h1 class="look_title">{% trans 'ВАКАНСИИ ПО КАТЕГОРИЯМ' %}</h1>
+            <div class="loook-3">
+              <a class="look-box" href="https://enbek.kz/ru/search/vac?region_id=63&kvotInv=kvotInv"
+                ><img
+                  src="{% static 'img/main-vacancy-category-1.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">
+                  {% trans 'для лиц с инвалидностью' %}
+                </div>
+              </a>
+              <a class="look-box" href="https://enbek.kz/ru/search/vac?region_id=63&fl_mbt=fl_mbt&kvotSirot=kvotSirot"
+                ><img
+                  src="{% static 'img/main-vacancy-category-2.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">{% trans 'для молодежи' %}</div>
+              </a>
+              <a class="look-box" href="https://enbek.kz/ru/search/vac?region_id=63&fl_relocate=fl_relocate"
+                ><img
+                  src="{% static 'img/main-vacancy-category-3.png' %}"
+                  alt=""
+                  srcset=""
+                  class="look-img"
+                />
+                <div class="look-text">
+                  {% trans 'с предоставлением жилья' %}
+                </div></a
+              >
+            </div>
+            <a class="look-all" href="https://enbek.kz/ru/search/vac?region_id=63">{% trans 'СМОТРЕТЬ ВСЕ ДОСТУПНЫЕ ВАКАНСИИ' %}</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="business">
+      <div class="container">
+        <div class="business-cont">
+          
+          <div class="right-business">
+            <h1 class="r-bus__title">
+              {% trans 'ПОДДЕРЖКА ПРЕДПРИНИМАТЕЛЬСКИХ ИНИИЦИАТИВ' %}
+            </h1>
+            <div class="r-boxer">
+              <div class="text-boxes">
+                <img src="{% static 'img/bastau.png' %}" alt="" srcset="" />
+                <p>{% trans 'Обучение основам предпринемательства по проекту "БАСТАУ БИЗНЕС"' %}
+                  
+                </p>
+              </div>
+              <div class="text-boxes">
+                <img src="{% static 'img/400mrp.png' %}" alt="" srcset="" />
+                <p>{% trans 'государственный грант дляреализации новых бизнес-идей в РАЗМЕРЕ 400МРП' %}
+
+                </p>
+              </div>
+              <div class="img-boxes">
+                <a href="https://damu.kz/programmi/"><img src="{% static 'img/damu.png' %}" alt="" srcset="" /></a>
+              </div>
+              <div class="img-boxes">
+                <a href="https://astana.atameken.kz/"><img src="{% static 'img/atameken.png' %}" alt="" srcset="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="get-qualified">
+      <div class="container">
+        <h1 class="get__title">{% trans 'ПОЛУЧИТЬ ВОСТРЕБОВАННУЮ КВАЛИФИКАЦИЮ' %}
+          
+        </h1>
+        <div class="get-section">
+          <div class="get-item">
+            <div class="get-block">
+              <a href="{% url 'mySite:new_page' 'professionalnoe-obuchenie-v-uchebnyh-organizaciyah' %}" class="get-block-link-sb">
+                <img src="{% static 'img/building-icon.png' %}" alt="" />
+                <p>{% trans 'ПРОФЕССИОНАЛЬНОЕ ОБУЧЕНИЕ В УЧЕБНЫХ ОРГАНИЗАЦИЯХ' %}
+
+                </p>
+              </a>
+            </div>
+            <div class="mt"></div>
+            <div class="get-block">
+              <a href="{% url 'mySite:new_page' 'besplatnye-onlajn-kursy-dlya-bezrabotnyh-grazhdan' %}" class="get-block-link-sb">
+                <img src="{% static 'img/person-icon.png' %}" alt="" />
+                <p>{% trans 'БЕСПЛАТНЫЕ ОНЛАЙН КУРСЫ ДЛЯ ВСЕХ ГРАЖДАН' %}
+                  
+                </p>
+              </a>
+            </div>
+            <!-- <div class="get-block" id="get-block-green">
+              <a href="" class="get-block-link-sb" id="t-l-c">
+                <p class="get-block__orange">
+                  ЗАПИСАТЬСЯ НА ПРОФЕССИОНАЛЬНОЕ <br />
+                  ОБУЧЕНИЕ
+                </p>
+              </a>
+            </div> -->
+          </div>
+          <div class="get-item">
+            <div class="get-block">
+              <a href="{% url 'mySite:new_page' 'professionalnoe-obuchenie-na-rabochem-meste' %}" class="get-block-link-sb">
+                <img src="{% static 'img/worker.png' %}" alt="" />
+                <p>{% trans 'ПРОФЕССИОНАЛЬНОЕ ОБУЧЕНИЕ НА РАБОЧЕМ МЕСТЕ' %}
+
+                </p>
+              </a>
+            </div>
+            <div class="mt"></div>
+            <div class="get-block">
+              <a href="https://enbek.kz/ru/search/vac?region_id=63" class="get-block-link-sb">
+                <img src="{% static 'img/test-icon.png' %}" alt="" />
+                <p>{% trans 'ПОСМОТРЕТЬ ВСЕ ДОСТУПНЫЕ ВАКАНСИИ' %}
+
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="get-item">
+            <div class="get-block-big">
+              <a href="https://www.enbek.kz/ru/barret" class="get-block-link">
+                <img src="{% static 'img/test-icon.png' %}" alt="" />
+                <p>
+                  ПРОФОРИЕНТАЦИОННЫЙ <br />
+                  ТЕСТ
+                </p>
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="support">
+      <div class="container">
+        <h1 class="support__title">{% trans 'ПОДДЕРЖКА СОЦИАЛЬНО-УЯЗВИМЫХ ГРАЖДАН' %}</h1>
+        <div class="support-section">
+          <a href="{% url 'mySite:new_page' 'adresnaja-socialnaja-pomoshh' %}">
+            <div class="support-block">
+              <img src="{% static 'img/social-weak-1.png' %}" alt="" />
+              <p>{% trans 'АДРЕСНАЯ СОЦИАЛЬНАЯ ПОМОЩЬ' %}
+                
+              </p>
+            </div>
+          </a>
+
+          <a href="{% url 'mySite:new_page' 'specialnye-rabochie-mesta' %}">
+            <div class="support-block">
+              <img src="{% static 'img/social-weak-2.png' %}" alt="" />
+              <p>{% trans 'СПЕЦИАЛЬНЫЕ РАБОЧИЕ МЕСТА' %}
+                
+              </p>
+            </div>
+          </a>
+
+          <a href="{% url 'mySite:new_page' 'rabochie-mesta-po-kvotam' %}">
+            <div class="support-block">
+                
+              <img src="{% static 'img/social-weak-3.png' %}" alt="" />
+              <p>{% trans 'КВОТЫ РАБОЧИХ МЕСТ' %}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {% include 'mySite/footer.html' %} 
+    
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container1', {
+        slidesPerView: 3,  
+        spaceBetween: 10,  
+        loop: true,  
+        autoplay: {
+          delay: 3000,  
+          disableOnInteraction: false,  
+        },
+        navigation: {
+            
+        },
+      });
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(95271336, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/95271336" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+  </body>
+</html>

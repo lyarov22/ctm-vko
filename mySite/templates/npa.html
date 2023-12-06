@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{ language_code }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mySite/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'mySite/header2.css' %}">
+    <title>{% trans 'Нормативно-правовые акты' %} - {% trans 'Центр Трудовой мобильности Восточно-Казахстанской области' %}</title>
+</head>
+<body>
+    {% include 'mySite/header.html' %}
+    <div class="head">
+        <div class="container">
+            <div class="head-h">
+            <h1>{% trans 'Нормативно-правовые акты' %}</h1>
+              
+ {% load i18n %}
+            <p>{% trans 'Коммунальное государственное учреждение «Центр трудовой мобильности» Восточно-Казахстанской области' %}</p>
+        </div>
+        </div>
+    <div class="conteiner">
+        <div class="mian-section">
+            <p class="main-text"><a class="links" href="http://adilet.zan.kz/rus/docs/K950001000_">Конституция Республики Казахстан (принята на республиканском&nbsp;</a><a class="links" href="https://old.cz-almaty.kz/kz/c/18/normativno-pravovaya-baza">референдуме от 30 августа 1995 года)</a></p class="main-text">
+            <p class="main-text"><a class="links" href="http://adilet.zan.kz/rus/docs/Z1600000482">Закон Республики Казахстан «О занятости населения» от 6 апреля 2016&nbsp;</a><a class="links" href="http://adilet.zan.kz/rus/docs/Z1600000482">года № 482-V ЗРК</a></p class="main-text">
+            <p class="main-text"><a class="links" href="http://adilet.zan.kz/rus/docs/Z1300000088">Закон Республики Казахстан «О государственных услугах» от 15 апреля&nbsp;</a><a class="links" href="http://adilet.zan.kz/rus/docs/Z1300000088">2013 года № 88-V</a></p class="main-text">
+            <p class="main-text"><a class="links" href="https://adilet.zan.kz/rus/docs/K2000000350">Кодекс Республики Казахстан «АДМИНИСТРАТИВНЫЙ ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ КОДЕКС РЕСПУБЛИКИ КАЗАХСТАН» от 29 июня 2020 года № 350-VI</a></p class="main-text">
+            <p class="main-text"><a class="links" href="http://adilet.zan.kz/rus/docs/Z010000246_">Закон Республики Казахстан «О государственной адресной социальной&nbsp;</a><a class="links" href="http://adilet.zan.kz/rus/docs/Z010000246_">помощи» от 17 июля 2001 года № 246-II&nbsp;<span class="s3">(с&nbsp;</span></a>изменениями и дополнениями<span class="s3">&nbsp;по состоянию на 02.07.2018 г.)</span></p class="main-text">
+            <p class="main-text"><a class="links" href="https://adilet.zan.kz/rus/docs/P2100000728">Постановление Правительства Республики Казахстан от 12 октября 2021 года № 728. «Об утверждении национального проекта по развитию предпринимательства на 2021 – 2025 годы»</a></p class="main-text">
+            <p class="main-text"><a class="links" href="https://adilet.zan.kz/rus/docs/V2200026748">Приказ и.о. Министра труда и социальной защиты населения Республики Казахстан от 7 февраля 2022 года № 46. «О внесении изменений и дополнений в приказ Министра здравоохранения и социального развития Республики Казахстан от 14 июня 2016 года № 516 «О некоторых вопросах содействия занятости населения»</a></p class="main-text">
+            <p class="main-text"><a class="links" href="https://adilet.zan.kz/rus/docs/V2100022394">Приказ Министра труда и социальной защиты населения Республики Казахстан от 25 марта 2021 года № 84. «О некоторых вопросах оказания государственных услуг в социально-трудовой сфере»</a></p class="main-text">
+            <p class="main-text"><a class="links" href="http://adilet.zan.kz/rus/docs/V1600014056">Приказ Министра здравоохранения и социального развития Республики&nbsp;</a><a class="links" href="http://adilet.zan.kz/rus/docs/V1600014056">Казахстан от 28 июня 2016 года № 576 «Об утверждении индивидуальной&nbsp;</a><a class="links" href="http://adilet.zan.kz/rus/docs/V1600014056">карты трудоустройства и формы ее заполнения»</a></p class="main-text">
+            <p class="main-text"><a class="links" href="http://adilet.zan.kz/rus/docs/Z1500000434">Закон Республики Казахстан «О государственных закупках» от 4 декабря&nbsp;</a><a class="links" href="http://adilet.zan.kz/rus/docs/Z1500000434">2015 года № 434-V ЗРК</a></p class="main-text">
+            <p class="main-text"><a class="links" href="http://adilet.zan.kz/rus/docs/V1500012590">Приказ Министра финансов Республики Казахстан от 11 декабря 2015&nbsp;</a><a class="links" href="http://adilet.zan.kz/rus/docs/Z1500000434">года № 648 «Об утверждении Правил осуществления государственных&nbsp;</a><a class="links" href="http://adilet.zan.kz/rus/docs/Z1500000434">закупок»</a></p class="main-text">
+        </div>
+    </div>
+    
+
+    {% include 'mySite/footer.html' %} 
+</body>
+</html>
