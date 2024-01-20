@@ -120,6 +120,20 @@ li :hover {
   height: 0px;
 }
 
+.fedorovP{
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.fedorovA{
+  
+  color:rgb(202, 230, 77)
+}
+
+
 @media all and (max-width: 940px) {
 
 .footer-section{
@@ -129,3 +143,4 @@ li :hover {
 }
 
 }
+
