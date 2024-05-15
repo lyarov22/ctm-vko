@@ -33,7 +33,7 @@
                   <div class="swiper-slide first-slide">
                     <a href="{% url 'mySite:post' post.slug %}">
                       {% if post.image %}
-                        <img src="{{ post.image.url }}" alt="{% if language_code == 'kk' %}{{ post.title2 }}{% else %}{{ post.title }}{% endif %}">
+                        <img style="object-fit: cover;" src="{{ post.image.url }}" alt="{% if language_code == 'kk' %}{{ post.title2 }}{% else %}{{ post.title }}{% endif %}">
                       {% endif %}
                         <p>{{ post.pub_date }}</p>
                         <p>{% if language_code == 'kk' %}{{ post.title2 }}{% else %}{{ post.title }}{% endif %}</p>
@@ -334,22 +334,22 @@
       });
     </script>
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();
-       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-       ym(95271336, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true
-       });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/95271336" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+    ym(95271336, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/95271336" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 
   </body>
 </html>
